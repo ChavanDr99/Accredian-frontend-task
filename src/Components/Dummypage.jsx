@@ -1,11 +1,11 @@
 import {React,useEffect, useState} from 'react'
 import lottie from 'lottie-web';
-import animationData from "./n4RN8Rp4Dc.json"
+import animationData from "../Components/lottieanimation/Success.json"
 import { Link } from 'react-router-dom';
 import axios from 'axios'
 import { useNavigate } from 'react-router-dom';
 import {toast} from 'react-hot-toast';
-// import { Link} from 'react-router-dom'
+
 
 const Dummypage = () => {
   const navigate=useNavigate();

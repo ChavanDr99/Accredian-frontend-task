@@ -1,11 +1,11 @@
 import {React,useEffect, useState} from 'react'
 import lottie from 'lottie-web';
-import animationData from "./React.json"
+import animationData from "../Components/lottieanimation/React.json"
 import { Link} from 'react-router-dom'
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios'
 import {toast} from 'react-hot-toast';
-// import axios from 'axios'
+
 
 const Login = () => {
   const navigate=useNavigate();
@@ -46,9 +46,6 @@ const Login = () => {
       });
     });
   }
-
-  
-
     useEffect(() => {
         const anim = lottie.loadAnimation({
           container: document.getElementById('lottie-container'),
@@ -71,11 +68,7 @@ const Login = () => {
     <h1 className=' text-3xl font-bold text-blue-800  sm:text-3xl mb-2'>Welcome Back!</h1> 
     <h1 className=' text-xl text-gray-500 font-bold sm:text-lg mb-7 '>Login to Continue</h1>
      
-      {/* {loader ? <section className='flex justify-center items-center'>
-        <ThreeDots size={23} color='blue' />
-      </section> :
-        <>
-        </>} */}
+   
       <h1 className='font-bold text-lg '>Email:</h1>
 
 

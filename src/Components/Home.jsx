@@ -1,9 +1,9 @@
 import {React,useEffect} from 'react'
 import { TypeAnimation } from 'react-type-animation';
-import {Link,  useNavigate} from 'react-router-dom'
+import { useNavigate} from 'react-router-dom'
 
 import lottie from 'lottie-web';
-import animationData from "./home.json"
+import animationData from "../Components/lottieanimation/home.json"
 
 import FacebookRoundedIcon from '@mui/icons-material/FacebookRounded';
 import YouTubeIcon from '@mui/icons-material/YouTube';
@@ -24,6 +24,9 @@ const Home = () => {
         return () => anim.destroy(); 
       }, []);
   return (
+
+    // Header And MainPage
+
 <div className="py-0    ">  
 <h1 className='font-bold text-blue-700 mx-5 text-3xl'>accredian</h1>
 <p className='font-bold text-gray-500 mx-5 text-sm'>credentials that matter</p>
@@ -67,6 +70,12 @@ their careers. The company has been founded by ISB and BITS Pilani graduates
     </div>
   </div>
 </div>
+
+
+
+{/* Footer */}
+
+
 <div className=" flex w-[100%] pt-7 md:flex-row flex-col h-max md:px-[2%] mr-0 my-0 text-slate-600 bg-gray-100  p-1 "  >
           <div className=" w-[60%] flex flex-col  gap-2 text-[18px] text-[#646464] md:ml-0 ml-12 md:items-start md:justify-start items-center justify-center ">
           <h1 className='font-bold text-blue-700 mx-5 text-3xl'>accredian</h1>

@@ -1,6 +1,6 @@
 import {React,useEffect, useState} from 'react'
 import lottie from 'lottie-web';
-import animationData from "./React.json"
+import animationData from "../Components/lottieanimation/React.json"
 import { Link} from 'react-router-dom'
 import axios from 'axios'
 import {toast} from 'react-hot-toast';
@@ -41,7 +41,7 @@ const SignUp = () => {
       })
       .catch((error) => {
         toast.error('Error:', error);
-        // Handle other error scenarios accordingly
+       
       });
   };
   
@@ -73,11 +73,7 @@ const SignUp = () => {
       <form className='w-full px-6 md:px-[20vh]' onSubmit={handlesubmit} >
 
         <h1 className='text-center text-2xl font-bold text-blue-700'>Signup</h1>
-        {/* {loader ? <section className='flex justify-center items-center'>
-          <ThreeDots size={23} color='blue' />
-        </section> :
-          <>
-          </>} */}
+      
         <input type='text' required placeholder='Name ' name='name' className='w-full p-2 border-2 mt-5 my-2 rounded-2xl'
         onChange={e=>setvalues({...values,name:e.target.value})}
            />
