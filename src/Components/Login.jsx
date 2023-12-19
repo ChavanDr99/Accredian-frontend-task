@@ -1,6 +1,6 @@
 import {React,useEffect, useState} from 'react'
 import lottie from 'lottie-web';
-import animationData from "./react.json"
+import animationData from "./React.json"
 import { Link} from 'react-router-dom'
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios'
